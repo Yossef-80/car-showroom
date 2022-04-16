@@ -1,0 +1,65 @@
+﻿  Admin.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(6,9): error C3646: 'userName': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(12): message : see reference to class template instantiation 'Admin<T>' being compiled
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(6,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(8,11): error C3646: 'listOfServices': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(8,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(11,40): error C2065: 'n': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(11,40): error C3861: 'n': identifier not found
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(12,76): error C2065: 'n': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(12,76): error C3861: 'n': identifier not found
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(32,28): error C2065: 'n': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(32,28): error C3861: 'n': identifier not found
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(39,42): error C2065: 'n': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(39,42): error C3861: 'n': identifier not found
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(40,76): error C2065: 'n': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(40,76): error C3861: 'n': identifier not found
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(60,30): error C2065: 'n': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(60,30): error C3861: 'n': identifier not found
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(67,42): error C2065: 'n': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(67,42): error C3861: 'n': identifier not found
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(68,76): error C2065: 'n': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(68,76): error C3861: 'n': identifier not found
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(88,30): error C2065: 'n': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(88,30): error C3861: 'n': identifier not found
+  BuyRentProcess.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\BuyRentProcess.h(7,7): error C3646: 'shosenCar': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\BuyRentProcess.h(7,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Cars.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(5,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(5,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(7,9): error C3646: 'installments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(7,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Customer.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Customer.h(5,9): error C3646: 'userName': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Customer.h(5,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Garages.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(5,9): error C3646: 'name': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(5,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(6,9): error C3646: 'location': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(6,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(8,11): error C3646: 'listOfServices': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(8,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Main.cpp
+  ServiceProcess.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ServiceProcess.h(7,11): error C3646: 'chosenServices': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ServiceProcess.h(7,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Services.h(6,9): error C3646: 'name': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Services.h(6,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Services.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Services.h(6,9): error C3646: 'name': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Services.h(6,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  ShowRooms.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Generating Code...

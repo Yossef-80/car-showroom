@@ -1,6 +1,7 @@
 #pragma once
 class Garages
 {
+private:
 	int id;
 	string name;
 	string location;
