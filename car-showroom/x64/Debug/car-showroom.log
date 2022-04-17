@@ -1,65 +1,287 @@
 ﻿  Admin.cpp
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(6,9): error C3646: 'userName': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(12): message : see reference to class template instantiation 'Admin<T>' being compiled
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(6,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(8,11): error C3646: 'listOfServices': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(8,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(11,40): error C2065: 'n': undeclared identifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(11,40): error C3861: 'n': identifier not found
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(12,76): error C2065: 'n': undeclared identifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(12,76): error C3861: 'n': identifier not found
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(32,28): error C2065: 'n': undeclared identifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(32,28): error C3861: 'n': identifier not found
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(39,42): error C2065: 'n': undeclared identifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(39,42): error C3861: 'n': identifier not found
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(40,76): error C2065: 'n': undeclared identifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(40,76): error C3861: 'n': identifier not found
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(60,30): error C2065: 'n': undeclared identifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(60,30): error C3861: 'n': identifier not found
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(67,42): error C2065: 'n': undeclared identifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(67,42): error C3861: 'n': identifier not found
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(68,76): error C2065: 'n': undeclared identifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(68,76): error C3861: 'n': identifier not found
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(88,30): error C2065: 'n': undeclared identifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(88,30): error C3861: 'n': identifier not found
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(7,9): error C3646: 'adminName': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(7,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,22): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(18,9): error C3646: 'GetAdminName': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(18,21): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(18,24): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,37): error C2065: 'adminName': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,47): error C2065: 'user': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,13): error C2059: syntax error: ','
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,37): error C2238: unexpected token(s) preceding ';'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,9): error C3646: 'getModel': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,17): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,20): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,9): error C3646: 'getMake': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,16): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,9): error C3646: 'getInstallments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,24): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,16): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,15): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,23): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,38): error C2039: 'model': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,46): error C2065: 'model': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,36): error C2039: 'make': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,43): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,56): error C2039: 'installments': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,75): error C2065: 'installments': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(9,11): error C3646: 'listOfServices': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(9,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(5,1): error C2011: 'ShowRooms': 'class' type redefinition
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(4): message : see declaration of 'ShowRooms'
   BuyRentProcess.cpp
-E:\Visual_Studio_Projects\car-showroom\car-showroom\BuyRentProcess.h(7,7): error C3646: 'shosenCar': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\BuyRentProcess.h(7,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\BuyRentProcess.h(8,7): error C3646: 'shosenCar': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\BuyRentProcess.h(8,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,13): error C2059: syntax error: ','
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,37): error C2238: unexpected token(s) preceding ';'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,9): error C3646: 'getModel': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,17): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,20): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,9): error C3646: 'getMake': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,16): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,9): error C3646: 'getInstallments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,24): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,16): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,15): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,23): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,38): error C2039: 'model': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,46): error C2065: 'model': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,36): error C2039: 'make': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,43): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,56): error C2039: 'installments': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,75): error C2065: 'installments': undeclared identifier
   Cars.cpp
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(5,9): error C3646: 'make': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(5,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(7,9): error C3646: 'installments': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(7,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,13): error C2059: syntax error: ','
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,37): error C2238: unexpected token(s) preceding ';'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,9): error C3646: 'getModel': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,17): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,20): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,9): error C3646: 'getMake': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,16): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,9): error C3646: 'getInstallments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,24): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,16): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,15): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,23): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,38): error C2039: 'model': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,46): error C2065: 'model': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,36): error C2039: 'make': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,43): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,56): error C2039: 'installments': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,75): error C2065: 'installments': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(7,9): error C3646: 'adminName': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(7,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,22): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(18,9): error C3646: 'GetAdminName': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(18,21): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(18,24): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,37): error C2065: 'adminName': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,47): error C2065: 'user': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(9,11): error C3646: 'listOfServices': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(9,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(5,1): error C2011: 'ShowRooms': 'class' type redefinition
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(4): message : see declaration of 'ShowRooms'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.cpp(10,2): error C2065: 'installments': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.cpp(11,2): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.cpp(13,2): error C2065: 'model': undeclared identifier
   Customer.cpp
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Customer.h(5,9): error C3646: 'userName': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Customer.h(5,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Customer.h(6,9): error C3646: 'userName': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Customer.h(6,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Customer.h(15,10): error C3646: 'getusername': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Customer.h(15,21): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Customer.h(15,24): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,13): error C2059: syntax error: ','
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,37): error C2238: unexpected token(s) preceding ';'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,9): error C3646: 'getModel': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,17): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,20): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,9): error C3646: 'getMake': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,16): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,9): error C3646: 'getInstallments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,24): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,16): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,15): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,23): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,38): error C2039: 'model': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,46): error C2065: 'model': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,36): error C2039: 'make': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,43): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,56): error C2039: 'installments': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,75): error C2065: 'installments': undeclared identifier
   Garages.cpp
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(5,9): error C3646: 'name': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(5,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(6,9): error C3646: 'location': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(6,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(8,11): error C3646: 'listOfServices': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(8,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(6,9): error C3646: 'name': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(6,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(7,9): error C3646: 'location': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(7,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(9,11): error C3646: 'listOfServices': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(9,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,13): error C2059: syntax error: ','
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,37): error C2238: unexpected token(s) preceding ';'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,9): error C3646: 'getModel': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,17): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,20): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,9): error C3646: 'getMake': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,16): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,9): error C3646: 'getInstallments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,24): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,16): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,15): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,23): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,38): error C2039: 'model': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,46): error C2065: 'model': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,36): error C2039: 'make': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,43): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,56): error C2039: 'installments': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,75): error C2065: 'installments': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(5,1): error C2011: 'ShowRooms': 'class' type redefinition
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(4): message : see declaration of 'ShowRooms'
   Main.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(7,9): error C3646: 'adminName': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(7,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,22): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(18,9): error C3646: 'GetAdminName': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(18,21): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(18,24): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,37): error C2065: 'adminName': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,47): error C2065: 'user': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,13): error C2059: syntax error: ','
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,37): error C2238: unexpected token(s) preceding ';'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,9): error C3646: 'getModel': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,17): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,20): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,9): error C3646: 'getMake': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,16): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,9): error C3646: 'getInstallments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,24): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,16): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,15): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,23): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,38): error C2039: 'model': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,46): error C2065: 'model': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,36): error C2039: 'make': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,43): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,56): error C2039: 'installments': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,75): error C2065: 'installments': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(9,11): error C3646: 'listOfServices': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.h(9,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(5,1): error C2011: 'ShowRooms': 'class' type redefinition
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(4): message : see declaration of 'ShowRooms'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Main.cpp(16,12): error C2079: 'showRooms' uses undefined class 'ShowRooms'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Main.cpp(32,36): error C2660: 'Admin::InsertUserName': function does not take 1 arguments
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.h(15,7): message : see declaration of 'Admin::InsertUserName'
   ServiceProcess.cpp
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ServiceProcess.h(7,11): error C3646: 'chosenServices': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ServiceProcess.h(7,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Services.h(6,9): error C3646: 'name': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Services.h(6,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ServiceProcess.h(8,11): error C3646: 'chosenServices': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ServiceProcess.h(8,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,13): error C2059: syntax error: ','
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,37): error C2238: unexpected token(s) preceding ';'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,9): error C3646: 'getModel': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,17): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,20): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,9): error C3646: 'getMake': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,16): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,9): error C3646: 'getInstallments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,24): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,16): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,15): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,23): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,38): error C2039: 'model': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,46): error C2065: 'model': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,36): error C2039: 'make': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,43): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,56): error C2039: 'installments': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,75): error C2065: 'installments': undeclared identifier
   Services.cpp
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Services.h(6,9): error C3646: 'name': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Services.h(6,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,13): error C2059: syntax error: ','
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,37): error C2238: unexpected token(s) preceding ';'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,9): error C3646: 'getModel': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,17): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,20): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,9): error C3646: 'getMake': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,16): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,9): error C3646: 'getInstallments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,24): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,16): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,15): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,23): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,38): error C2039: 'model': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,46): error C2065: 'model': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,36): error C2039: 'make': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,43): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,56): error C2039: 'installments': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,75): error C2065: 'installments': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(5,1): error C2011: 'ShowRooms': 'class' type redefinition
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(4): message : see declaration of 'ShowRooms'
   ShowRooms.cpp
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,8): error C3646: 'ListOfCars': unknown override specifier
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.h(10,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,9): error C3646: 'make': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,13): error C2059: syntax error: ','
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(8,37): error C2238: unexpected token(s) preceding ';'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,9): error C3646: 'getModel': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,17): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(13,20): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,9): error C3646: 'getMake': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,16): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(16,19): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,9): error C3646: 'getInstallments': unknown override specifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,24): error C2059: syntax error: '('
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(17,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,16): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,15): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,23): error C2061: syntax error: identifier 'string'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,38): error C2039: 'model': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(20,46): error C2065: 'model': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,36): error C2039: 'make': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(23,43): error C2065: 'make': undeclared identifier
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,56): error C2039: 'installments': is not a member of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(4): message : see declaration of 'Cars'
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.h(24,75): error C2065: 'installments': undeclared identifier
   Generating Code...

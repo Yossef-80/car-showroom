@@ -1,5 +1,5 @@
-#pragma once
- template<class T>
+#include<string>
+
 class Admin
 {
 private:
@@ -7,9 +7,9 @@ private:
 	string adminName;
 	int password;
 public:
-	void insert(T val);
-	void update(T val,int pos);
-	void deletefun(T val);
+	void insert();
+	void update();
+	void deletefun();
 	Admin(void);
 	void insertID(int adminID) { ID = adminID; };
 	void InsertUserName(string user) { adminName=user; };
@@ -17,5 +17,6 @@ public:
 	int getpassword() { return password; };
 	string GetAdminName() { return adminName; };
 	int getID() { return ID; };
+	void AdminSelection();
 };
 

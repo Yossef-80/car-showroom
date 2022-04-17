@@ -6,4 +6,6 @@ private:
 	int date;
 	int moneyAmount;
 	Cars shosenCar;
+public :
+
 };

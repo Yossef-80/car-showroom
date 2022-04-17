@@ -4,5 +4,4 @@ ShowRooms::ShowRooms()
 {
 	Cars cars[30];
 	this->ID = 0;
-	this->ListOfCars = NULL;
 }
