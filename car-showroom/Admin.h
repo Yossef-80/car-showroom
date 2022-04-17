@@ -1,5 +1,5 @@
 #include<string>
-
+#include<iostream>
 class Admin
 {
 private:
@@ -7,16 +7,20 @@ private:
 	string adminName;
 	int password;
 public:
-	void insert();
-	void update();
-	void deletefun();
+	//constructor
 	Admin(void);
-	void insertID(int adminID) { ID = adminID; };
-	void InsertUserName(string user) { adminName=user; };
-	void insertpassword(int pass) { password = pass; };
+	//setters
+	void insertID(int adminID);
+	void InsertUserName(string user) ;
+	void insertpassword(int pass) ;
+	//getters
 	int getpassword() { return password; };
 	string GetAdminName() { return adminName; };
 	int getID() { return ID; };
+	//functions
 	void AdminSelection();
+	void insert();
+	void update();
+	void deletefun();
 };
 

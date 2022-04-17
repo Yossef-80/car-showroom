@@ -1,25 +1,33 @@
 #include "Customer.h"
 #include"ShowRooms.h"
 #include<fstream>
+#include<string>
 Customer::Customer()
 {
 	this->password = 0;
 	this->ID = 0;
+	this->userName="";
+}
+void Customer::setcustomerName(string name)
+{
+	userName = name;
 }
 void Customer::CustomerRegister()
 {
 	int id;
 	int pass;
+	string name;
 	cout << "-------------REGISTER------------" <<endl;
 	cout << "please enter the user ID:";
 	cin >> id;
-
-	this->ID = id;
+	cout << "please enter the user name:";
+	cin >> name;
+	setcustomerName(name);
 	cout << "please enter the password:";
 	cin >> pass;
-	this->password = pass;
+	customerUpdatePassword(pass);
 	ofstream CustomerFile("customers.txt");
-	CustomerFile << id<<"|"<<pass<<endl;
+	CustomerFile << id<<"|"<<pass<<"|"<<endl;
 	CustomerFile.close();
 }
 void Customer::customerUpdatePassword(int pass)
@@ -33,14 +41,15 @@ void Customer::CustomerID(int custID)
 }
 void Customer::CustomerLogin()
 {
-	string name;
+	int id;
 	int pass;
 	cout << "-------------LOGIN------------" << endl;
 	cout << "please enter the user name:";
-	cin >> name;
+	cin >> id;
+	CustomerID(id);
 	cout << "please enter the password:";
 	cin >> pass;
-
+	customerUpdatePassword(pass);
 	
 }
 void Customer::customerSelect(int selection)

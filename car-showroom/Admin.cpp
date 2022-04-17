@@ -4,11 +4,17 @@
 #include"Cars.h"
 #include"Garages.h"
 #include"Services.h"
+#include<string>
+using namespace std;
+void Admin::InsertUserName(string user) { adminName = user; }
+void Admin::insertID(int adminID) { ID = adminID; }
 
+void Admin::insertpassword(int pass) { password = pass; }
 Admin::Admin()
 {
 	ID = 0;
 	password = 0;
+	adminName = "";
 }
 void Admin::update()
 {
@@ -40,7 +46,7 @@ void Admin::update()
 void Admin ::insert()
 {
 	int choice;
-	cout << "what do you want to update?"<<endl;
+	cout << "what do you want to insert?"<<endl;
 	cout << "1. for garage||2. for showroom||3. for Cars ||4. for services" <<endl;
 	cin >> choice;
 	if (choice == 1)
@@ -68,33 +74,51 @@ void Admin ::deletefun()
 {
 	int choice;
 	int deletedItem;
-	cout << "what do you want to delete from?" <<endl;
-	cout << "1. for garage||2. for showroom||3. for Cars ||4. for services"<<endl;
-	cin >> choice;
-	if (choice == 1)
+	
+	while (true)
 	{
-		cout << "please Enter garage id"<<endl;
-		cin >> deletedItem;
-		for (int i = 0; i < 3; i++)
+		cout << "what do you want to delete from?" <<endl;
+		cout << "1. for garage||2. for showroom||3. for Cars ||4. for services"<<endl;
+		cin >> choice;
+		if (choice == 1)
 		{
+			cout << "please Enter garage id" << endl;
+			cin >> deletedItem;
+			cout << "do you want to delete the garage? y/n";
+			char sel;
+			cin >> sel;
+			if (sel == 'y')
+			{
 
+			}
+			else
+			{
+				cout << "do you want to delete a car? y/n" << endl;
+				char sel2;
+				cin >> sel2;
+				if (sel2=='n')
+				{
+					break;
+				}
+			}
 		}
-	}
-	else if (choice == 2)
-	{
-		cout << "please Enter showroom ID"<<endl;
-	}
-	else if (choice == 3)
-	{
-		cout << "please Enter car ID" << endl;
-	}
-	else if (choice == 4)
-	{
-		cout << "please Enter service ID" << endl;
-	}
-	else
-	{
-		cout << "unvaled choice" <<endl;
+
+		else if (choice == 2)
+		{
+			cout << "please Enter showroom ID" << endl;
+		}
+		else if (choice == 3)
+		{
+			cout << "please Enter car ID" << endl;
+		}
+		else if (choice == 4)
+		{
+			cout << "please Enter service ID" << endl;
+		}
+		else
+		{
+			cout << "unvaled choice" << endl;
+		}
 	}
 }
 void Admin::AdminSelection()

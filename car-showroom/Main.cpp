@@ -8,32 +8,58 @@
 #include<list>
 #include<string>
 using namespace std;
+Admin administrator;
+Customer customer;
+ShowRooms showRooms;
+Cars cars;
+Garages garages;
+Services services;
+list<Garages>garage;
+list<Services>service;
+list<ShowRooms>showroom;
+list<Customer>customers;
 int main()
 {	int i;
+	int choice;
 	
-	Admin administrator;
-	Customer customer;
-	ShowRooms showRooms;
-	Cars cars;
-	Garages garages;
-	Services services;
 	cout << "please select the user --> 1.admin || 2.Customer " << endl;
 	cin >> i;
 	if (i==1)
 	{
-		cout << "-----------------SignIN--------------"<<endl;
-		cout << "please Enter Admin ID: ";
+		cout << "-----------------Admin SignIN--------------"<<endl;
+		cout << "please Enter ID: ";
 		int num;
 		cin >> num;
-		administrator.insertID(num);
-		cout << "please Enter admin Name: ";
+		cout << "please Enter Name: ";
 		string name;
 		cin >> name;
-		administrator.InsertUserName(name);
 		cout << "please Enter Password : ";
 		int pass;
 		cin >> pass;
-		administrator.insertpassword(pass);
+		administratorAccess( num, pass, name);
+	}
+	else if (i==2)
+	{	
+		cout << "-------------Customer--------------" << endl;
+		cout << "1.login || 2.registration" << endl;
+		cin >> choice;
+		if (choice==1)
+		{	
+			customer.CustomerLogin();
+		}
+		else if (choice==2)
+		{
+			customer.CustomerRegister();
 
+		}
 	}
 }
+void administratorAccess(int num,int pass,string name)
+{
+	administrator.insertID(num);
+	administrator.InsertUserName(name);
+	administrator.insertpassword(pass);
+	cout << "Welcome " << administrator.GetAdminName() << endl;
+	administrator.AdminSelection();
+}
+
