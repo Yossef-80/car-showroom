@@ -1,4 +1,6 @@
+#pragma once
 #include<iostream>
+#include"Services.h"
 class ServiceProcess
 {
 private:
@@ -11,23 +13,15 @@ private:
 public:
 	//setters
 	int servicesCounter = 0;
-	void setprocessID(int processID) { this->processID = processID; };
-	void setCustomerId(int customerID) { this->customerID = customerID; };
-	void setDate(int date) { this->date = date; };
-	void setMoneyAmount(float moneyAmount) { this->moneyAmount = moneyAmount; };
-	void setChosenServices(Services chosenServices) {
-		this->chosenServices[servicesCounter] = chosenServices;
-		servicesCounter++;
-	};
+	void setprocessID(int processID);
+	void setCustomerId(int customerID) ;
+	void setDate(int date) ;
+	void setMoneyAmount(float moneyAmount) ;
+	void setChosenServices(Services chosenServices) ;
 	//getters
-	int getProcessID() { return processID; };
-	int getCustomerID() { return customerID; };
-	int getDate() { return date; };
-	float getMoneyAmount() { return moneyAmount; };
-	Services getChosenServices() {
-		for (int i = 0; i < servicesCounter; i++)
-		{
-			return chosenServices[i];
-		}
-	};
+	int getProcessID() ;
+	int getCustomerID();
+	int getDate() ;
+	float getMoneyAmount() ;
+	Services getChosenServices() ;
 };

@@ -1,5 +1,8 @@
-#include<string>
+#pragma once
 #include<iostream>
+#include<string>
+using namespace std;
+
 class Admin
 {
 private:
@@ -7,16 +10,14 @@ private:
 	string adminName;
 	int password;
 public:
-	//constructor
-	Admin(void);
 	//setters
 	void insertID(int adminID);
 	void InsertUserName(string user) ;
 	void insertpassword(int pass) ;
 	//getters
-	int getpassword() { return password; };
-	string GetAdminName() { return adminName; };
-	int getID() { return ID; };
+	int getpassword() ;
+	string GetAdminName();
+	int getID() ;
 	//functions
 	void AdminSelection();
 	void insert();

@@ -1,17 +1,18 @@
-#include "Customer.h"
-#include"ShowRooms.h"
+#include<iostream>
 #include<fstream>
 #include<string>
-Customer::Customer()
-{
-	this->password = 0;
-	this->ID = 0;
-	this->userName="";
-}
-void Customer::setcustomerName(string name)
-{
-	userName = name;
-}
+#include "Customer.h"
+#include<string>
+using namespace std;
+//setters
+void Customer::CustomerID(int custId) { ID = custId; };
+void Customer::customerUpdatePassword(int pass) { password = pass; };
+void Customer::setcustomerName(string name) { this->userName = name; };
+//getters
+string Customer::getusername() { return userName; };
+int Customer::getcustomerID() { return ID; };
+int Customer::getcustomerpass() { return password; };
+
 void Customer::CustomerRegister()
 {
 	int id;
@@ -30,15 +31,6 @@ void Customer::CustomerRegister()
 	CustomerFile << id<<"|"<<pass<<"|"<<endl;
 	CustomerFile.close();
 }
-void Customer::customerUpdatePassword(int pass)
-{
-	this->password = pass;
-}
-
-void Customer::CustomerID(int custID)
-{
-	this->ID = custID;
-}
 void Customer::CustomerLogin()
 {
 	int id;
@@ -50,35 +42,30 @@ void Customer::CustomerLogin()
 	cout << "please enter the password:";
 	cin >> pass;
 	customerUpdatePassword(pass);
-	
-}
+
+};
 void Customer::customerSelect(int selection)
 {
 	this->customerSelection = selection;
-	cout << "please select what do you want to do"<<endl;
-	cout << "1. register"<<endl;
-	cout << "2. login" << endl;
-	cout << "3.search for a car" << endl;
-	cout << "4.view data of showroom or garage" << endl;
-	cout << "5.buy or rent a car" << endl;
-	if (customerSelection==1)
+
+	if (customerSelection == 1)
 	{
 		CustomerRegister();
 	}
-	if (customerSelection == 2)
+	else if (customerSelection == 2)
+	{
+		CustomerLogin();
+	}
+	else if (customerSelection == 3)
 	{
 
 	}
-	if (customerSelection == 3)
+	else if (customerSelection == 4)
 	{
 
 	}
-	if (customerSelection == 4)
+	else if (customerSelection == 5)
 	{
 
 	}
-	if (customerSelection ==5)
-	{
-
-	}
-}
+};

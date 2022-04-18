@@ -18,6 +18,8 @@ list<Garages>garage;
 list<Services>service;
 list<ShowRooms>showroom;
 list<Customer>customers;
+void administratorAccess();
+void customerAccess();
 int main()
 {	int i;
 	int choice;
@@ -26,17 +28,8 @@ int main()
 	cin >> i;
 	if (i==1)
 	{
-		cout << "-----------------Admin SignIN--------------"<<endl;
-		cout << "please Enter ID: ";
-		int num;
-		cin >> num;
-		cout << "please Enter Name: ";
-		string name;
-		cin >> name;
-		cout << "please Enter Password : ";
-		int pass;
-		cin >> pass;
-		administratorAccess( num, pass, name);
+		
+		administratorAccess();
 	}
 	else if (i==2)
 	{	
@@ -52,14 +45,40 @@ int main()
 			customer.CustomerRegister();
 
 		}
+		customerAccess();
+
 	}
+	return 0;
 }
-void administratorAccess(int num,int pass,string name)
+void administratorAccess()
 {
+	cout << "-----------------Admin SignIN--------------" << endl;
+	cout << "please Enter ID: ";
+	int num;
+	cin >> num;
+	cout << "please Enter Name: ";
+	string name;
+	cin >> name;
+	cout << "please Enter Password : ";
+	int pass;
+	cin >> pass;
+
 	administrator.insertID(num);
 	administrator.InsertUserName(name);
 	administrator.insertpassword(pass);
 	cout << "Welcome " << administrator.GetAdminName() << endl;
 	administrator.AdminSelection();
+}
+void customerAccess() {
+	cout << "Welcome " << customer.getusername()<<endl;
+	cout << "please select what do you want to do" << endl;
+	cout << "1. register" << endl;
+	cout << "2. login" << endl;
+	cout << "3.search for a car" << endl;
+	cout << "4.view data of showroom or garage" << endl;
+	cout << "5.buy or rent a car" << endl;
+	int selection;
+	cin >> selection;
+	customer.customerSelect(selection);
 }
 

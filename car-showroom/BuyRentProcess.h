@@ -1,4 +1,6 @@
+#pragma once
 #include<iostream>
+#include"Cars.h"
 class BuyRentProcess
 {
 private:
@@ -9,17 +11,16 @@ private:
 	Cars shosenCar;
 public:
 	//Constructor
-	BuyRentProcess(void);
 	//setters
-	void setProcessID(int processID) { this->processID = processID; };
-	void setCustomerID(int CustomerID) { this->CustomerID = CustomerID; };
-	void setDate(int Date) { this->date = date; };
-	void setmoneyAmount(int moneyAmount) { this->moneyAmount = moneyAmount; };
-	void setShosenCar(Cars shosenCar) { this->shosenCar = shosenCar; };
+	void setProcessID(int processID) ;
+	void setCustomerID(int CustomerID) ;
+	void setDate(int Date) ;
+	void setmoneyAmount(int moneyAmount);
+	void setShosenCar(Cars shosenCar) ;
 	//getters
-	int getProcessID() { return processID; };
-	int getCustomerID() { return CustomerID; };
-	int getDate() { return date; };
-	int getMoneyAmount() { return moneyAmount; };
-	Cars getShosenCar() { return shosenCar; };
+	int getProcessID() ;
+	int getCustomerID() ;
+	int getDate() ;
+	int getMoneyAmount() ;
+	Cars getShosenCar() ;
 };

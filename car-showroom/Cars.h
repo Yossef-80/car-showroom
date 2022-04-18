@@ -1,5 +1,7 @@
-#include<string>
+#pragma once
 #include<iostream>
+#include<string>
+using namespace std;
 class Cars
 {
 private:
@@ -8,28 +10,19 @@ private:
 	
 public:
 	int installcounter=0;
-	Cars(void);
 	//getters 
-	int getID() { return ID; };
-	string getModel() { return model; };
-	int getPrice() { return price; };
-	int getYear() { return year; };
-	string getMake() { return make; };
-	string getInstallments() { 
-		for (int i = 0; i < installcounter; i++)
-		{
-			return installments[i];
-		}
-	 };
+	int getID() ;
+	string getModel();
+	int getPrice() ;
+	int getYear() ;
+	string getMake() ;
+	string getInstallments();
 	//setters
-	void setID(int id) { ID = id; };
-	void setModel(string model) { this->model = model; };
-	void setPrice(int price) { this->price = price; };
-	void setYear(int year) { this->year = year; };
-	void setMake(string make) { this->make = make; };
-	void setInstallments(string installments) {
-		this->installments[installcounter] = installments;
-		installcounter++;
-	};
+	void setID(int id);
+	void setModel(string model) ;
+	void setPrice(int price) ;
+	void setYear(int year);
+	void setMake(string make);
+	void setInstallments(string installments) ;
 };
 

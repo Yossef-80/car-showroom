@@ -6,16 +6,14 @@
 #include"Services.h"
 #include<string>
 using namespace std;
-void Admin::InsertUserName(string user) { adminName = user; }
-void Admin::insertID(int adminID) { ID = adminID; }
+void Admin::InsertUserName(string user) { adminName = user; };
+void Admin::insertID(int adminID) { ID = adminID; };
+void Admin::insertpassword(int pass) { password = pass; };
+//getters
+int Admin::getpassword() { return password; };
+string Admin::GetAdminName() { return adminName; };
+int Admin::getID() { return ID; };
 
-void Admin::insertpassword(int pass) { password = pass; }
-Admin::Admin()
-{
-	ID = 0;
-	password = 0;
-	adminName = "";
-}
 void Admin::update()
 {
 	int choice;

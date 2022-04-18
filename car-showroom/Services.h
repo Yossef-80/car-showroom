@@ -1,6 +1,7 @@
-
-#include<string>
+#pragma once
 #include<iostream>
+#include<string>
+using namespace std;
 class Services
 {
 private:
@@ -9,15 +10,15 @@ private:
 	float price;
 public:
 	//constructor
-	Services(void);
+
 	//setters
-	void setID(int ID) { this->ID = ID; };
-	void setName(string name) { this->name = name; };
-	void setprice(float price) { this->price = price; };
+	void setID(int ID);
+	void setName(string name);
+	void setprice(float price);
 	//getters
-	int getID() { return ID; };
-	string getName() { return name; };
-	float getPrice() { return price; };
+	int getID();
+	string getName() ;
+	float getPrice();
 
 
 };
