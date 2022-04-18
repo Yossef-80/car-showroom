@@ -5,8 +5,8 @@ using namespace std;
 class Cars
 {
 private:
-	int ID, price, year;
-	string make, installments[30],model;
+	int ID, price, year,installments;
+	string make,model;
 	
 public:
 	int installcounter=0;
@@ -16,13 +16,13 @@ public:
 	int getPrice() ;
 	int getYear() ;
 	string getMake() ;
-	string getInstallments();
+	int getInstallments();
 	//setters
 	void setID(int id);
 	void setModel(string model) ;
 	void setPrice(int price) ;
 	void setYear(int year);
 	void setMake(string make);
-	void setInstallments(string installments) ;
+	void setInstallments(int installments) ;
 };
 

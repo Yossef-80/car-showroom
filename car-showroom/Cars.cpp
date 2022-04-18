@@ -12,12 +12,13 @@ string Cars::getModel() { return model; };
 int Cars::getPrice() { return price; };
 int Cars::getYear() { return year; };
 string Cars::getMake() { return make; };
-string Cars::getInstallments() {
+int Cars::getInstallments() { return installments; };
+/*string Cars::getInstallments() {
 	for (int i = 0; i < installcounter; i++)
 	{
 		return installments[i];
 	}
-};
+};*/
 
 
 //setters
@@ -26,8 +27,11 @@ void Cars::setModel(string model) { this->model = model; };
 void Cars::setPrice(int price) { this->price = price; };
 void Cars::setYear(int year) { this->year = year; };
 void Cars::setMake(string make) { this->make = make; };
-void Cars::setInstallments(string installments) {
+/*void Cars::setInstallments(int installments) {
 	this->installments[installcounter] = installments;
 	installcounter++;
-};
-
+};*/
+void Cars::setInstallments(int installments)
+{
+	this->installments = installments;
+}

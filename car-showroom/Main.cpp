@@ -10,20 +10,19 @@
 using namespace std;
 Admin administrator;
 Customer customer;
-ShowRooms showRooms;
-Cars cars;
-Garages garages;
-Services services;
-list<Garages>garage;
-list<Services>service;
-list<ShowRooms>showroom;
-list<Customer>customers;
+//ShowRooms showRooms;
+//Cars cars;
+//Garages garages;
+//Services services;
+//list<Garages>garage;
+//list<Services>service;
+//list<ShowRooms>showroom;
+//list<Customer>customers;
 void administratorAccess();
 void customerAccess();
 int main()
 {	int i;
 	int choice;
-	
 	cout << "please select the user --> 1.admin || 2.Customer " << endl;
 	cin >> i;
 	if (i==1)
