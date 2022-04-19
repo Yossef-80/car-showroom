@@ -1,0 +1,20 @@
+﻿  Admin.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(87,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(192,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  BuyRentProcess.cpp
+  Cars.cpp
+  Customer.cpp
+  Garages.cpp
+  Main.cpp
+  ServiceProcess.cpp
+  Services.cpp
+  ShowRooms.cpp
+  Generating Code...
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.cpp(28): warning C4715: 'ShowRooms::GetCars': not all control paths return a value
+E:\Visual_Studio_Projects\car-showroom\car-showroom\ServiceProcess.cpp(24): warning C4715: 'ServiceProcess::getChosenServices': not all control paths return a value
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.cpp(26): warning C4715: 'Garages::getListOfServices': not all control paths return a value
+Admin.obj : error LNK2001: unresolved external symbol "public: static class std::list<class Cars,class std::allocator<class Cars> > Cars::carslist" (?carslist@Cars@@2V?$list@VCars@@V?$allocator@VCars@@@std@@@std@@A)
+Admin.obj : error LNK2001: unresolved external symbol "public: static class std::list<class ShowRooms,class std::allocator<class ShowRooms> > ShowRooms::showRoomsList" (?showRoomsList@ShowRooms@@2V?$list@VShowRooms@@V?$allocator@VShowRooms@@@std@@@std@@A)
+Admin.obj : error LNK2001: unresolved external symbol "public: static class std::list<class Services,class std::allocator<class Services> > Services::serviceslist" (?serviceslist@Services@@2V?$list@VServices@@V?$allocator@VServices@@@std@@@std@@A)
+Admin.obj : error LNK2001: unresolved external symbol "public: static class std::list<class Garages,class std::allocator<class Garages> > Garages::garagelist" (?garagelist@Garages@@2V?$list@VGarages@@V?$allocator@VGarages@@@std@@@std@@A)
+E:\Visual_Studio_Projects\car-showroom\Debug\car-showroom.exe : fatal error LNK1120: 4 unresolved externals

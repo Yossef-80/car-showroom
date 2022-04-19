@@ -2,7 +2,7 @@
 #include<fstream>
 #include<string>
 #include "Customer.h"
-#include<string>
+
 using namespace std;
 //setters
 void Customer::CustomerID(int custId) { ID = custId; };
@@ -15,6 +15,7 @@ int Customer::getcustomerpass() { return password; };
 
 void Customer::CustomerRegister()
 {
+		
 	int id;
 	int pass;
 	string name;
@@ -36,7 +37,7 @@ void Customer::CustomerLogin()
 	int id;
 	int pass;
 	cout << "-------------LOGIN------------" << endl;
-	cout << "please enter the user name:";
+	cout << "please enter the user id:";
 	cin >> id;
 	CustomerID(id);
 	cout << "please enter the password:";

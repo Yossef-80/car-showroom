@@ -1,8 +1,8 @@
-
 #include<iostream>
 #include "ShowRooms.h"
 #include"Cars.h"
 #include<string>
+using namespace std;
 //setters
 void ShowRooms::setID(int id) { ID = id; };
 void ShowRooms::setName(string name) { this->name = name; };
@@ -19,8 +19,8 @@ int ShowRooms::GetID() { return ID; };
 int ShowRooms::GetPhoneNum() { return phoneNumber; };
 string ShowRooms::GetLocation() { return location; };
 Cars ShowRooms::GetCars() {
-	int i = 0;
-	for (size_t i = 0; i <= counter; i++)
+	
+	for (int i = 0; i <= counter; i++)
 	{
 		return ListOfCars[i];
 	}

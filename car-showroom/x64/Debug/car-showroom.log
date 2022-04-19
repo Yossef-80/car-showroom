@@ -1,10 +1,5 @@
 ﻿  Admin.cpp
-  Cars.cpp
-  Garages.cpp
-  Main.cpp
-  ShowRooms.cpp
-  Generating Code...
-E:\Visual_Studio_Projects\car-showroom\car-showroom\ShowRooms.cpp(28): warning C4715: 'ShowRooms::GetCars': not all control paths return a value
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Garages.cpp(25): warning C4715: 'Garages::getListOfServices': not all control paths return a value
-E:\Visual_Studio_Projects\car-showroom\car-showroom\Cars.cpp(20): warning C4715: 'Cars::getInstallments': not all control paths return a value
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(83,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(217,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(322,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   car-showroom.vcxproj -> E:\Visual_Studio_Projects\car-showroom\x64\Debug\car-showroom.exe
