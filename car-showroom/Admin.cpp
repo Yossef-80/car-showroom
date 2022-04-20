@@ -395,7 +395,8 @@ void Admin ::deletefun()
 						garagelist.pop_front();
 						garagelist.push_back(tempgarage);
 					}
-					//garagelist.pop_front();
+					garagelist.pop_front();
+					break;
 				}
 				counter1++;
 			}
@@ -416,10 +417,11 @@ void Admin ::deletefun()
 					for (int i = 0; i < counter1; i++)
 					{
 						temproom = showRoomsList.front();
-						showRoomsList.pop_front();
 						showRoomsList.push_back(temproom);
+						showRoomsList.pop_front();
 					}
-					//garagelist.pop_front();
+					showRoomsList.pop_front();
+					break;
 				}
 				counter1++;
 			}
@@ -439,10 +441,12 @@ void Admin ::deletefun()
 					for (int i = 0; i < counter1; i++)
 					{
 						tempCar = carslist.front();
-						carslist.pop_front();
 						carslist.push_back(tempCar);
+						carslist.pop_front();
+						
 					}
-					//garagelist.pop_front();
+					carslist.pop_front();
+					break;
 				}
 				counter1++;
 			}
@@ -462,10 +466,11 @@ void Admin ::deletefun()
 					for (int i = 0; i < counter1; i++)
 					{
 						tempservice = serviceslist.front();
-						serviceslist.pop_front();
 						serviceslist.push_back(tempservice);
+						serviceslist.pop_front();
 					}
-					//garagelist.pop_front();
+					serviceslist.pop_front();
+					break;
 				}
 				counter1++;
 			}
