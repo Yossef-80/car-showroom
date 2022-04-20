@@ -165,11 +165,49 @@ void Admin::update()
 		else if (choice == 3)
 		{
 
+			cout << "Enter the ID of car that do you want to update: ";
+			cin >> Id;
+			for (list<Cars>::iterator it = carslist.begin(); it != carslist.end(); it++)
+			{
+				if (it->getID() == Id)
+				{
+
+					cout << "enter new make: ";
+					cin >> make;
+					it->setMake(make);
+					cout << "enter new Model: ";
+					cin >> model;
+					it->setModel(model);
+					cout << "enter new Year : ";
+					cin >> year;
+					it->setYear(year);
+					cout << "enter new price: ";
+					cin >> price;
+					it->setPrice(price);
+					cout << "enter new installments:";
+					cin >> installments;
+					it->setInstallments(installments);
+				}
+			}
+
 		}
 		//services
 		else if (choice == 4)
 		{
-
+		cout << "Enter the id of service do you want to update: ";
+		cin >> Id;
+			for (list<Services>::iterator it = serviceslist.begin(); it != serviceslist.end(); it++)
+			{
+				if (Id==it->getID())
+				{
+					cout << "enter new Service name: ";
+					cin >> name;
+					it->setName(name);
+					cout << "enter new service price: ";
+					cin >> price;
+					it->setprice(price);
+				}
+			}
 		}
 		else
 		{
@@ -342,43 +380,112 @@ void Admin ::deletefun()
 		cin >> choice;
 		if (choice == 1)
 		{
-			cout << "please Enter garage id" << endl;
+			Garages tempgarage;
+			int counter1 = 0;
+			cout << "please Enter garage id that you want to delete : " << endl;
 			cin >> deletedItem;
-			cout << "do you want to delete the garage? y/n";
-			char sel;
-			cin >> sel;
-			if (sel == 'y')
+			for (list<Garages>::iterator it = garagelist.begin(); it != garagelist.end(); it++)
 			{
-
-			}
-			else
-			{
-				cout << "do you want to delete a car? y/n" << endl;
-				char sel2;
-				cin >> sel2;
-				if (sel2=='n')
+			
+				if (it->getID()==deletedItem)
 				{
-					break;
+					for (int i = 0; i < counter1; i++)
+					{
+						tempgarage = garagelist.front();
+						garagelist.pop_front();
+						garagelist.push_back(tempgarage);
+					}
+					//garagelist.pop_front();
 				}
+				counter1++;
 			}
+			
 		}
-
+		//showroom
 		else if (choice == 2)
 		{
-			cout << "please Enter showroom ID" << endl;
+			ShowRooms temproom;
+			int counter1 = 0;
+			cout << "please Enter show room id that you want to delete : " << endl;
+			cin >> deletedItem;
+			for (list<ShowRooms>::iterator it = showRoomsList.begin(); it != showRoomsList.end(); it++)
+			{
+
+				if (it->GetID() == deletedItem)
+				{
+					for (int i = 0; i < counter1; i++)
+					{
+						temproom = showRoomsList.front();
+						showRoomsList.pop_front();
+						showRoomsList.push_back(temproom);
+					}
+					//garagelist.pop_front();
+				}
+				counter1++;
+			}
 		}
+		/// cars
 		else if (choice == 3)
 		{
-			cout << "please Enter car ID" << endl;
+			Cars tempCar;
+			int counter1 = 0;
+			cout << "please Enter show room id that you want to delete : " << endl;
+			cin >> deletedItem;
+			for (list<Cars>::iterator it = carslist.begin(); it != carslist.end(); it++)
+			{
+
+				if (it->getID() == deletedItem)
+				{
+					for (int i = 0; i < counter1; i++)
+					{
+						tempCar = carslist.front();
+						carslist.pop_front();
+						carslist.push_back(tempCar);
+					}
+					//garagelist.pop_front();
+				}
+				counter1++;
+			}
 		}
+		//////service
 		else if (choice == 4)
 		{
-			cout << "please Enter service ID" << endl;
+			Services tempservice;
+			int counter1 = 0;
+			cout << "please Enter service id that you want to delete : " << endl;
+			cin >> deletedItem;
+			for (list<Services>::iterator it = serviceslist.begin(); it != serviceslist.end(); it++)
+			{
+
+				if (it->getID() == deletedItem)
+				{
+					for (int i = 0; i < counter1; i++)
+					{
+						tempservice = serviceslist.front();
+						serviceslist.pop_front();
+						serviceslist.push_back(tempservice);
+					}
+					//garagelist.pop_front();
+				}
+				counter1++;
+			}
 		}
 		else
 		{
 			cout << "unvaled choice" << endl;
 		}
+	
+		cout << "another operation? y/n :";
+		cin >> choose;
+		if (choose=='n')
+		{
+			break;
+		}
+		else if (choose=='y')
+		{
+			continue;
+		}
+		
 	}
 }
 /// ////////function
