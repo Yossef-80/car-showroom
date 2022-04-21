@@ -15,7 +15,7 @@ int Customer::getcustomerpass() { return password; };
 
 void Customer::CustomerRegister()
 {
-		
+		//supposed to write in customer file
 	int id;
 	int pass;
 	string name;
@@ -34,6 +34,7 @@ void Customer::CustomerRegister()
 }
 void Customer::CustomerLogin()
 {
+	//supposed to read from custromer file to check whether he is regestred
 	int id;
 	int pass;
 	cout << "-------------LOGIN------------" << endl;
@@ -47,26 +48,25 @@ void Customer::CustomerLogin()
 };
 void Customer::customerSelect(int selection)
 {
+	//cout << "1.search for a car" << endl;
+	//cout << "2.view data of showroom or garage" << endl;
+	//cout << "3.buy or rent a car" << endl;
 	this->customerSelection = selection;
-
-	if (customerSelection == 1)
+	 if (customerSelection == 1)
 	{
-		CustomerRegister();
+		 //supposed to read from the car list
+		 //1.read from the car file and store data into car linked list
+		 //2.search with function getname in for loop then display the data of the car
 	}
 	else if (customerSelection == 2)
 	{
-		CustomerLogin();
+		 //supposed to display the linked list of garage or showroom
+		 //1.store data from showroom/garage file into list of showroom/garage
+		 //2.for loop on the list to display
 	}
 	else if (customerSelection == 3)
 	{
-
-	}
-	else if (customerSelection == 4)
-	{
-
-	}
-	else if (customerSelection == 5)
-	{
+		 //show buy or rent car from show room
 
 	}
 };

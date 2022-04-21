@@ -3,4 +3,7 @@ E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(83,23): warning C4
 E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(208,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(255,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 E:\Visual_Studio_Projects\car-showroom\car-showroom\Admin.cpp(360,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Main.cpp
+E:\Visual_Studio_Projects\car-showroom\car-showroom\Main.cpp(17,6): warning C4101: 'choice': unreferenced local variable
+  Generating Code...
   car-showroom.vcxproj -> E:\Visual_Studio_Projects\car-showroom\x64\Debug\car-showroom.exe

@@ -392,8 +392,9 @@ void Admin ::deletefun()
 					for (int i = 0; i < counter1; i++)
 					{
 						tempgarage = garagelist.front();
-						garagelist.pop_front();
+						
 						garagelist.push_back(tempgarage);
+						garagelist.pop_front();
 					}
 					garagelist.pop_front();
 					break;
